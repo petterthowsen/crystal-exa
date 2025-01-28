@@ -25,14 +25,14 @@ module Exa
 
             # The number of snippets to return for each result.
             @[JSON::Field(key: "highlightsPerUrl")]
-            highlights_per_url : Int32 = 1
+            property highlights_per_url : Int32 = 1
 
             # The number of sentences to return for each snippet.
             @[JSON::Field(key: "numSentences")]
-            num_sentences : Int32 = 5
+            property num_sentences : Int32 = 5
 
             # Custom query to direct the LLM's selection of highlights.
-            query : String?
+            property query : String?
 
             def initialize(@image_links : Int32 = 0, @links : Int32 = 0, @highlights_per_url : Int32 = 1, @num_sentences : Int32 = 5, @query : String? = nil)
             end
