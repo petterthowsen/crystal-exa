@@ -10,7 +10,7 @@ module Exa
         getter extras_links : Array(String) = [] of String
 
         # A URL to the favicon associated with the result.
-        getter favicon : String
+        getter favicon : String?
 
         # Array of highlights extracted from the search result content.
         getter highlights : Array(String) = [] of String
